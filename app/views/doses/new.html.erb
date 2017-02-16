@@ -1,0 +1,10 @@
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :description, label: "Dose", placeholder: "Entrez la description" %>
+  <%= f.association :ingredient, prompt: "- liste des ingrédients -" %>
+
+  <%= f.button :submit, "Créer une dose", class: "btn btn-primary" %>
+<% end %>
+<%= link_to "Retour au cocktail", cocktail_path(@cocktail) %>
+

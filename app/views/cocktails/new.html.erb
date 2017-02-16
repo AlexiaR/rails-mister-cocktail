@@ -1,0 +1,8 @@
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name, label: "Nom du cocktail", placeholder: "Entrez le nom du cocktail" %>
+
+  <%= f.button :submit, "Créer un cocktail", class: "btn btn-primary" %>
+<% end %>
+<%= link_to "Retour à la liste", cocktails_path(@cocktails) %>
