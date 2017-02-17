@@ -8,9 +8,31 @@ body {
   justify-content: space-between;
   height: 100%;
   background: #16A085; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #16A085, #F4D03F);
+  /* background: -webkit-linear-gradient(right, #16A085, #F4D03F);
   background: -o-linear-gradient(right, #16A085, #F4D03F);
-  background: linear-gradient(to left, #16A085, #F4D03F); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #16A085, #F4D03F) */; /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(270deg, #ffe451, #95d98e);
+  background-size: 400% 400%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 }
 
 h1 {
@@ -20,4 +42,20 @@ h1 {
 }
 p {
   text-align: center;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 37%}
+    50%{background-position:100% 64%}
+    100%{background-position:0% 37%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 37%}
+    50%{background-position:100% 64%}
+    100%{background-position:0% 37%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 37%}
+    50%{background-position:100% 64%}
+    100%{background-position:0% 37%}
 }
